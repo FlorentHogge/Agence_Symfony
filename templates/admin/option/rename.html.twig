@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container mt-3">
+        <h1>Ajouter une option</h1>
+
+       {{form_start(form)}}
+
+       {{ form_row(form.name, {'label': "Nouveau nom de l'option"}) }}
+
+       <button type="submit" class="btn btn-primary">Renommer</button>
+       
+       {{form_end(form)}}
+
+
+      
+    </div>
+
+{% endblock %}
